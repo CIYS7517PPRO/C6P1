@@ -1,1 +1,2 @@
-# C6P1
+# Chapter 6
+## Exercise 1
