@@ -3,8 +3,30 @@
 <head>
     <link href = "http://35.185.87.233/static/stylesheets/main.css" rel = "stylesheet">
     <link href = "https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel = "stylesheet">
+    <style>
+        #mainContainer {
+            display: flex;
+        }
+        #leftHandSide {
+            flex-basis: 70%;
+        }
+        #rightHandSide {
+            flex-basis: 30%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id = "mainContainer">
+        <div id = "leftSide">
+            Please enter a mark:<br>
+            <input type = "number" id = "markField">
+            <button onclick = "calculate">Display grade</button>
+        </div>
+        <div id = "rightSide">
+            <div id = "finalGrade" style = "display : none">
+                Grade: <b><p id = "finalGradeParagraph"></p></b>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
