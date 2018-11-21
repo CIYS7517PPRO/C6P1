@@ -28,5 +28,23 @@
             </div>
         </div>
     </div>
+    <script>
+        var field = document.getElementById("mainField");
+        var div = document.getElementById("finalGrade");
+        var paragraph = document.getElementById("finalGradeParagraph");
+        
+        var calculate = () => {
+            div.style.display = "block";
+            if (parseInt(field.value) >= 60) {
+                paragraph.innerHTML = "Merit";
+            }
+            elif (parseInt(field.value) >= 40 {
+                paragraph.innerHTML = "Pass";
+            }
+            else {
+                paragraph.innerHTML = "Fail";
+            }
+        }
+    </script>
 </body>
 </html>
