@@ -14,6 +14,7 @@
         }
         #rightHandSide {
             flex-basis: 25%;
+            text-align: right;
         }
     </style>
 </head>
@@ -39,12 +40,15 @@
             div.style.display = "block";
             if (parseInt(field.value) >= 60) {
                 paragraph.innerHTML = "Merit";
+                paragrpah.style.color = "#98ba34";
             }
             else if (parseInt(field.value) >= 40) {
                 paragraph.innerHTML = "Pass";
+                paragraph.style.color = "#f2c604";
             }
             else {
                 paragraph.innerHTML = "Fail";
+                paragraph.style.color = "#e04e55";
             }
         }
     </script>
